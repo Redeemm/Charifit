@@ -2,8 +2,8 @@ import 'package:flutter/material.dart';
 
 import '../../../size_config.dart';
 
-class DiscountBanner extends StatelessWidget {
-  const DiscountBanner({
+class GiveBanner extends StatelessWidget {
+  const GiveBanner({
     Key? key,
   }) : super(key: key);
 
@@ -25,7 +25,7 @@ class DiscountBanner extends StatelessWidget {
         TextSpan(
           style: TextStyle(color: Colors.white),
           children: [
-            TextSpan(text: "Welcome back\n"),
+            TextSpan(text: "Welcome, \n"),
             TextSpan(
               text: "Cheerful Givers",
               style: TextStyle(

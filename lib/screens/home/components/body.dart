@@ -2,10 +2,10 @@ import 'package:flutter/material.dart';
 
 import '../../../size_config.dart';
 import 'categories.dart';
-import 'discount_banner.dart';
+import 'GiveBanner.dart';
 import 'home_header.dart';
-import 'popular_product.dart';
-import 'special_offers.dart';
+import 'UrgentHelp.dart';
+import 'DailyHelp.dart';
 
 class Body extends StatelessWidget {
   @override
@@ -17,11 +17,11 @@ class Body extends StatelessWidget {
             SizedBox(height: getProportionateScreenHeight(20)),
             HomeHeader(),
             SizedBox(height: getProportionateScreenWidth(10)),
-            DiscountBanner(),
+            GiveBanner(),
             Categories(),
             SpecialOffers(),
             SizedBox(height: getProportionateScreenWidth(30)),
-            PopularProducts(),
+            UrgentHelp(),
             SizedBox(height: getProportionateScreenWidth(30)),
           ],
         ),

@@ -73,8 +73,8 @@ class SpecialOfferCard extends StatelessWidget {
       child: GestureDetector(
         onTap: press,
         child: SizedBox(
-          width: getProportionateScreenHeight(235),
-          height: getProportionateScreenWidth(100),
+          width: getProportionateScreenHeight(200),
+          height: getProportionateScreenWidth(70),
 
           // height: 100,
           // width: 100,

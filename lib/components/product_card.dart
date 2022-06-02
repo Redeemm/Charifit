@@ -9,7 +9,7 @@ import '../size_config.dart';
 class ProductCard extends StatelessWidget {
   const ProductCard({
     Key? key,
-    this.width = 140,
+    this.width = 220,
     this.aspectRetio = 1.02,
     required this.product,
   }) : super(key: key);
@@ -35,14 +35,18 @@ class ProductCard extends StatelessWidget {
               AspectRatio(
                 aspectRatio: 1.02,
                 child: Container(
-                  padding: EdgeInsets.all(getProportionateScreenWidth(20)),
+                  padding: EdgeInsets.all(getProportionateScreenWidth(10)),
                   decoration: BoxDecoration(
                     color: kSecondaryColor.withOpacity(0.1),
                     borderRadius: BorderRadius.circular(15),
                   ),
                   child: Hero(
                     tag: product.id.toString(),
-                    child: Image.asset(product.images[0]),
+                    child: Image.asset(product.images[0],
+                      width: 300,
+                      height: 300,
+                      fit: BoxFit.cover,
+                    ),
                   ),
                 ),
               ),

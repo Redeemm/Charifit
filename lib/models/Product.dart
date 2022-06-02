@@ -2,10 +2,10 @@ import 'package:flutter/material.dart';
 
 class Product {
   final int id;
-  final String title, description;
+  final String title, description, precentage;
   final List<String> images;
   final List<Color> colors;
-  final double rating, price;
+  final double rating;
   final bool isFavourite, isPopular;
 
   Product({
@@ -16,7 +16,7 @@ class Product {
     this.isFavourite = false,
     this.isPopular = false,
     required this.title,
-    required this.price,
+    required this.precentage,
     required this.description,
   });
 }
@@ -27,10 +27,7 @@ List<Product> demoProducts = [
   Product(
     id: 1,
     images: [
-      "assets/images/ps4_console_white_1.png",
-      "assets/images/ps4_console_white_2.png",
-      "assets/images/ps4_console_white_3.png",
-      "assets/images/ps4_console_white_4.png",
+      "assets/images/B.png",
     ],
     colors: [
       Color(0xFFF6625E),
@@ -39,8 +36,8 @@ List<Product> demoProducts = [
       Colors.white,
     ],
     title: "Wireless Controller for PS4™",
-    price: 64.99,
-    description: description,
+    precentage: "64.99%",
+    description: description1,
     rating: 4.8,
     isFavourite: true,
     isPopular: true,
@@ -48,7 +45,7 @@ List<Product> demoProducts = [
   Product(
     id: 2,
     images: [
-      "assets/images/Image Popular Product 2.png",
+      "assets/images/B.png",
     ],
     colors: [
       Color(0xFFF6625E),
@@ -57,15 +54,15 @@ List<Product> demoProducts = [
       Colors.white,
     ],
     title: "Nike Sport White - Man Pant",
-    price: 50.5,
-    description: description,
+    precentage: "50.5%",
+    description: description2,
     rating: 4.1,
     isPopular: true,
   ),
   Product(
     id: 3,
     images: [
-      "assets/images/glap.png",
+      "assets/images/B.png",
     ],
     colors: [
       Color(0xFFF6625E),
@@ -74,8 +71,8 @@ List<Product> demoProducts = [
       Colors.white,
     ],
     title: "Gloves XC Omega - Polygon",
-    price: 36.55,
-    description: description,
+    precentage: "36.55%",
+    description: description3,
     rating: 4.1,
     isFavourite: true,
     isPopular: true,
@@ -83,7 +80,7 @@ List<Product> demoProducts = [
   Product(
     id: 4,
     images: [
-      "assets/images/wireless headset.png",
+      "assets/images/A.png",
     ],
     colors: [
       Color(0xFFF6625E),
@@ -91,13 +88,23 @@ List<Product> demoProducts = [
       Color(0xFFDECB9C),
       Colors.white,
     ],
-    title: "Logitech Head",
-    price: 20.20,
-    description: description,
+    title: "Gloves XC Omega - Polygon",
+    precentage: "36.55%",
+    description: description3,
     rating: 4.1,
     isFavourite: true,
+    isPopular: true,
   ),
 ];
 
-const String description =
+const String description1 =
+    "Wireless Controller for PS4™ gives you what you want in your gaming from over precision control your games to sharing …";
+
+const String description2 =
+    "Wireless Controller for PS4™ gives you what you want in your gaming from over precision control your games to sharing …";
+
+const String description3 =
+    "Wireless Controller for PS4™ gives you what you want in your gaming from over precision control your games to sharing …";
+
+const String description4 =
     "Wireless Controller for PS4™ gives you what you want in your gaming from over precision control your games to sharing …";
